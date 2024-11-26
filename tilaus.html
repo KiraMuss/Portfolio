@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BF</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="../Harjoitukset3/favicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <img class="header_logo" src="../Harjoitukset3/logo.png" />
+        <nav class="nav_list">
+          <ul class="header_list">
+            <li><a href="./index.html">Etusivu</a></li>
+            <li><a href="./tilaus.html">Tilaus</a></li>
+            <li><a href="./contact.html">Yhteystiedot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Welcome part -->
+
+    <main>
+      <section class="welcome_tilaus">
+        <div class="welcome_container_tilaus">
+          <p class="text_tilaus">
+            Voit tehdä sähköpostitilauksen alla olevan lomakkeen avulla tai
+            soittaa numeroon 045677777.
+          </p>
+        </div>
+      </section>
+
+      <section class="berry">
+        <div class="berry_container">
+          <div class="berry-list_card">
+            <img
+              src="../Harjoitukset3/vadelma.png"
+              alt="vadelma"
+              class="berry__img"
+            />
+            <h2 class="berry-list_title">Vadelma</h2>
+          </div>
+          <div class="berry-list_card">
+            <img
+              src="../Harjoitukset3/mansikka.png"
+              alt="mansikkaa"
+              class="berry__img"
+            />
+            <h2 class="berry-list_title">Mansikka</h2>
+          </div>
+          <div class="berry-list_card">
+            <img
+              src="../Harjoitukset3/mustaviinimarja.webp"
+              alt="mustaviinimarja"
+              class="berry__img"
+            />
+            <h2 class="berry-list_title">Mustaviinimarja</h2>
+          </div>
+          <div class="berry-list_card">
+            <img
+              src="../Harjoitukset3/punainen_viinimarja.webp"
+              alt="punainen iinimarja"
+              class="berry__img"
+            />
+            <h2 class="berry-list_title">Punainen viinimarja</h2>
+          </div>
+        </div>
+      </section>
+      <div class="form_main_container"> 
+      <div class="form_container">
+        <h1>Marjatilaus</h1>
+        <form>
+          <div class="form_group">
+            <label for="name">Nimi</label>
+            <input type="text" id="name" name="name" placeholder="Syötä nimi" required>
+          </div>
+
+          <div class="form_group">
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="form_group">
+            <label for="number">Puhelinnumero</label>
+            <input type="number" id="number" name="email" placeholder="Puhelinnumero" required>
+          </div>
+
+          <div class="form_group">
+            <label for="Marjojen_tyyppi">Valitse marjaa</label>
+            <select id="Marjojen_tyyppi" name="Marjojen_tyyppi" required>
+              <option value="Vadelma">Vadelma</option>
+              <option value="Mansikka">Mansikka</option>
+              <option value="Mustaviinimarja">Mustaviinimarja</option>
+              <option value="Punainen_viinimarja">Punainen viinimarja</option>
+            </select>
+          </div>
+
+          <div class="form_group">
+            <label for="quantity">Määrä</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Määrä">
+          </div>
+
+          <div class="form_group">
+            <label for="address">Kuljetuksen osoite</label>
+            <textarea name="address" id="address" rows="2" laceholder="Osoite"></textarea>
+          </div>
+
+          <div class="form_button">
+            <button type="reset" class="btn_clear">Tyhjennä</button>
+            <button type="submit" class="btn_submit">Tehdä tilaus</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
